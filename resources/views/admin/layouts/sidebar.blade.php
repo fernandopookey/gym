@@ -4,9 +4,10 @@
 <div class="dlabnav">
     <div class="dlabnav-scroll">
         <ul class="metismenu" id="menu">
-            <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+            <li>
+                <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                     <i class="material-symbols-outlined">home</i>
-                    <span class="nav-text">Dashboard</span>
+                    <span class="nav-text">Home</span>
                 </a>
                 <ul aria-expanded="false">
                     <li><a href="index.html">Dashboard Light</a></li>
@@ -15,9 +16,10 @@
                 </ul>
 
             </li>
-            <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+            <li>
+                <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                     <i class="material-symbols-outlined">school</i>
-                    <span class="nav-text">Student</span>
+                    <span class="nav-text">Barcode Scan</span>
                 </a>
                 <ul aria-expanded="false">
                     <li><a href="student.html">Student</a></li>
@@ -27,9 +29,10 @@
                 </ul>
 
             </li>
-            <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+            <li>
+                <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                     <i class="material-symbols-outlined">person</i>
-                    <span class="nav-text">Teacher</span>
+                    <span class="nav-text">Approval</span>
                 </a>
                 <ul aria-expanded="false">
                     <li><a href="teacher.html">Teacher</a></li>
@@ -39,9 +42,10 @@
                 </ul>
 
             </li>
-            <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+            <li>
+                <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                     <i class="material-symbols-outlined">restaurant_menu</i>
-                    <span class="nav-text">Food</span>
+                    <span class="nav-text">Transaction Member</span>
                 </a>
                 <ul aria-expanded="false">
                     <li><a href="food.html">Food menu</a></li>
@@ -49,9 +53,10 @@
                 </ul>
 
             </li>
-            <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+            <li>
+                <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                     <i class="material-icons">folder</i>
-                    <span class="nav-text">File Manager</span>
+                    <span class="nav-text">Transaction Guest</span>
                 </a>
                 <ul aria-expanded="false">
                     <li><a href="file-manager.html">File Manager</a></li>
@@ -61,9 +66,10 @@
                     <li><a href="activity.html">Activity</a></li>
                 </ul>
             </li>
-            <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+            <li>
+                <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                     <i class="material-icons"> app_registration </i>
-                    <span class="nav-text">Apps</span>
+                    <span class="nav-text">Physiotherapy</span>
                 </a>
                 <ul aria-expanded="false">
                     <li><a href="./app-profile.html">Profile</a></li>
@@ -90,9 +96,10 @@
                     </li>
                 </ul>
             </li>
-            <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+            <li>
+                <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                     <i class="material-icons"> assessment </i>
-                    <span class="nav-text">Charts</span>
+                    <span class="nav-text">Transaction Cafe</span>
                 </a>
                 <ul aria-expanded="false">
                     <li><a href="./chart-flot.html">Flot</a></li>
@@ -103,10 +110,11 @@
                     <li><a href="./chart-peity.html">Peity</a></li>
                 </ul>
             </li>
-            <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+            <li>
+                <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
 
                     <i class="material-icons"> favorite </i>
-                    <span class="nav-text">Bootstrap</span>
+                    <span class="nav-text">Member</span>
                 </a>
                 <ul aria-expanded="false">
                     <li><a href="./ui-accordion.html">Accordion</a></li>
@@ -128,9 +136,10 @@
 
                 </ul>
             </li>
-            <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+            <li>
+                <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                     <i class="material-icons"> extension </i>
-                    <span class="nav-text">Plugins</span>
+                    <span class="nav-text">Report</span>
                 </a>
                 <ul aria-expanded="false">
                     <li><a href="./uc-select2.html">Select 2</a></li>
@@ -142,9 +151,10 @@
                     <li><a href="./uc-lightgallery.html">Light Gallery</a></li>
                 </ul>
             </li>
-            <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+            <li>
+                <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                     <i class="material-icons"> widgets </i>
-                    <span class="nav-text">Widget</span>
+                    <span class="nav-text">Staf List</span>
                 </a>
                 <ul aria-expanded="false">
                     <li><a href="./widget-chart.html">Chart</a></li>
@@ -152,9 +162,10 @@
                     <li><a href="./widget-list.html">List</a></li>
                 </ul>
             </li>
-            <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+            <li>
+                <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                     <i class="material-icons"> insert_drive_file </i>
-                    <span class="nav-text">Forms</span>
+                    <span class="nav-text">Setting</span>
                 </a>
                 <ul aria-expanded="false">
                     <li><a href="./form-element.html">Form Elements</a></li>
@@ -164,7 +175,8 @@
                     <li><a href="form-validation.html">Form Validate</a></li>
                 </ul>
             </li>
-            <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+            {{-- <li>
+                <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                     <i class="material-icons"> table_chart </i>
                     <span class="nav-text">Table</span>
                 </a>
@@ -173,7 +185,8 @@
                     <li><a href="table-datatable-basic.html">Datatable</a></li>
                 </ul>
             </li>
-            <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+            <li>
+                <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                     <i class="material-icons">article</i>
                     <span class="nav-text">Pages</span>
                 </a>
@@ -192,7 +205,7 @@
                     <li><a href="./page-lock-screen.html">Lock Screen</a></li>
                     <li><a href="./empty-page.html">Empty Page</a></li>
                 </ul>
-            </li>
+            </li> --}}
         </ul>
         <div class="copyright">
             <p><strong>School Admission Dashboard</strong></p>

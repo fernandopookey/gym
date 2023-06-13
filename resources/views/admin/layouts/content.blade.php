@@ -9,13 +9,14 @@
     <div class="container-fluid">
         <!-- Row -->
         <div class="row">
-            <div class="col-xl-12">
+            @if ($content)
+            @include($content)
+            @endif
+            {{-- <div class="col-xl-12">
                 <div class="card">
                     <div class="card-body pb-xl-4 pb-sm-3 pb-0">
-                        @if ($content)
-                        @include($content)
-                        @endif
-                        {{-- <div class="row">
+
+                        <div class="row">
                             <div class="col-xl-3 col-6">
                                 <div class="content-box">
                                     <div class="icon-box icon-box-xl std-data">
@@ -80,10 +81,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> --}}
+                        </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>
