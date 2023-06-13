@@ -48,8 +48,15 @@
                     <span class="nav-text">Transaction Member</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="food.html">Food menu</a></li>
-                    <li><a href="food-details.html">Food Detail</a></li>
+                    <li><a href="#">Member Registration</a></li>
+                    <li><a href="#">Trainer Registration</a></li>
+                    <li><a href="#">Finger Registration</a></li>
+                    <li><a href="#">Member Payment</a></li>
+                    <li><a href="#">Studio Payment</a></li>
+                    <li><a href="#">Booking Studio</a></li>
+                    <li><a href="#">Running Session</a></li>
+                    <li><a href="#">Session Trainer</a></li>
+                    <li><a href="#">Session Trainer PGT</a></li>
                 </ul>
 
             </li>
@@ -175,17 +182,17 @@
                     <li><a href="form-validation.html">Form Validate</a></li>
                 </ul>
             </li>
-            {{-- <li>
-                <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
-                    <i class="material-icons"> table_chart </i>
-                    <span class="nav-text">Table</span>
-                </a>
-                <ul aria-expanded="false">
-                    <li><a href="table-bootstrap-basic.html">Bootstrap</a></li>
-                    <li><a href="table-datatable-basic.html">Datatable</a></li>
-                </ul>
-            </li>
             <li>
+                <a href="{{ route('logout') }}" class="nav-link" onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();" class="dropdown-item">
+                    <i class="nav-icon fas fa-sign-out-alt"></i>
+                    <p>Logout</p>
+                </a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                </form>
+            </li>
+            {{-- <li>
                 <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                     <i class="material-icons">article</i>
                     <span class="nav-text">Pages</span>
