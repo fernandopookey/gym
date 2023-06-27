@@ -7,6 +7,9 @@
 <div class="content-body">
     <!-- row -->
     <div class="container-fluid">
+        @include('notify::messages')
+        <x:notify-messages />
+        @notifyJs
         <!-- Row -->
         <div class="row">
             @if ($content)

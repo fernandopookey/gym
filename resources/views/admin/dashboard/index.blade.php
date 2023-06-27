@@ -7,7 +7,7 @@
                 </span>
                 <div class="media-body text-white text-end">
                     <p class="mb-1 text-white">Total Membership</p>
-                    <h3 class="text-white">100</h3>
+                    <h3 class="text-white">{{ $totalMember }}</h3>
                 </div>
             </div>
         </div>
@@ -22,7 +22,7 @@
                 </span>
                 <div class="media-body text-white text-end">
                     <p class="mb-1 text-white">Active Membership</p>
-                    <h3 class="text-white">90</h3>
+                    <h3 class="text-white">{{ $activeMember }}</h3>
                 </div>
             </div>
         </div>
@@ -37,7 +37,7 @@
                 </span>
                 <div class="media-body text-white text-end">
                     <p class="mb-1 text-white">Inactive Membership</p>
-                    <h3 class="text-white">10</h3>
+                    <h3 class="text-white">{{ $inactiveMember }}</h3>
                 </div>
             </div>
         </div>
