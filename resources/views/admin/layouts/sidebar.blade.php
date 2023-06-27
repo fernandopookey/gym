@@ -10,9 +10,10 @@
                     <span class="nav-text">Home</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="index.html">Dashboard Light</a></li>
-                    <li><a href="index-2.html">Dashboard Dark</a></li>
-                    <li><a href="finance.html">Finance</a></li>
+                    {{-- <li><a href="index.html">Dashboard Light</a></li> --}}
+                    <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
+                    <li><a href="{{ route('member.index') }}">Member List</a></li>
+                    <li><a href="{{ route('trainer.index') }}">Trainer List</a></li>
                 </ul>
 
             </li>
@@ -48,7 +49,7 @@
                     <span class="nav-text">Transaction Member</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="#">Member Registration</a></li>
+                    <li><a href="{{ route('member.create') }}">Member Registration</a></li>
                     <li><a href="#">Trainer Registration</a></li>
                     <li><a href="#">Finger Registration</a></li>
                     <li><a href="#">Member Payment</a></li>
@@ -66,11 +67,12 @@
                     <span class="nav-text">Transaction Guest</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="file-manager.html">File Manager</a></li>
-                    <li><a href="user.html">User</a></li>
-                    <li><a href="celandar.html">Calendar</a></li>
-                    <li><a href="chat.html">Chat</a></li>
-                    <li><a href="activity.html">Activity</a></li>
+                    <li><a href="file-manager.html">Buddy Refferal</a></li>
+                    <li><a href="user.html">Appoitment</a></li>
+                    <li><a href="celandar.html">Leads</a></li>
+                    <li><a href="chat.html">Trial Member</a></li>
+                    <li><a href="activity.html">Missed Guest</a></li>
+                    <li><a href="activity.html">Trash BTB</a></li>
                 </ul>
             </li>
             <li>
@@ -109,12 +111,12 @@
                     <span class="nav-text">Transaction Cafe</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="./chart-flot.html">Flot</a></li>
-                    <li><a href="./chart-morris.html">Morris</a></li>
-                    <li><a href="./chart-chartjs.html">Chartjs</a></li>
-                    <li><a href="./chart-chartist.html">Chartist</a></li>
-                    <li><a href="./chart-sparkline.html">Sparkline</a></li>
-                    <li><a href="./chart-peity.html">Peity</a></li>
+                    <li><a href="#">Transaction POS</a></li>
+                    <li><a href="#">Transaction Purchase</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Distributor</a></li>
+                    <li><a href="#">Report POS</a></li>
+                    <li><a href="#">History POS</a></li>
                 </ul>
             </li>
             <li>
@@ -124,22 +126,10 @@
                     <span class="nav-text">Member</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="./ui-accordion.html">Accordion</a></li>
-                    <li><a href="./ui-alert.html">Alert</a></li>
-                    <li><a href="./ui-badge.html">Badge</a></li>
-                    <li><a href="./ui-button.html">Button</a></li>
-                    <li><a href="./ui-modal.html">Modal</a></li>
-                    <li><a href="./ui-button-group.html">Button Group</a></li>
-                    <li><a href="./ui-list-group.html">List Group</a></li>
-                    <li><a href="./ui-card.html">Cards</a></li>
-                    <li><a href="./ui-carousel.html">Carousel</a></li>
-                    <li><a href="./ui-dropdown.html">Dropdown</a></li>
-                    <li><a href="./ui-popover.html">Popover</a></li>
-                    <li><a href="./ui-progressbar.html">Progressbar</a></li>
-                    <li><a href="./ui-tab.html">Tab</a></li>
-                    <li><a href="./ui-typography.html">Typography</a></li>
-                    <li><a href="./ui-pagination.html">Pagination</a></li>
-                    <li><a href="./ui-grid.html">Grid</a></li>
+                    <li><a href="#">Member</a></li>
+                    <li><a href="#">Member Visit</a></li>
+                    <li><a href="#">Member Expired</a></li>
+                    <li><a href="#">Member Checkin</a></li>
 
                 </ul>
             </li>
@@ -149,25 +139,16 @@
                     <span class="nav-text">Report</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="./uc-select2.html">Select 2</a></li>
-                    <li><a href="./uc-nestable.html">Nestedable</a></li>
-                    <li><a href="./uc-noui-slider.html">Noui Slider</a></li>
-                    <li><a href="./uc-sweetalert.html">Sweet Alert</a></li>
-                    <li><a href="./uc-toastr.html">Toastr</a></li>
-                    <li><a href="./map-jqvmap.html">Jqv Map</a></li>
-                    <li><a href="./uc-lightgallery.html">Light Gallery</a></li>
+                    <li><a href="#">Fitness Club</a></li>
+                    <li><a href="#">Guest</a></li>
+                    <li><a href="#">FC Performance</a></li>
                 </ul>
             </li>
             <li>
-                <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
-                    <i class="material-icons"> widgets </i>
-                    <span class="nav-text">Staf List</span>
+                <a href="{{ route('staff.index') }}" href="javascript:void(0);" aria-expanded="false">
+                    <i class="material-symbols-outlined">person</i>
+                    <span class="nav-text">Staff List</span>
                 </a>
-                <ul aria-expanded="false">
-                    <li><a href="./widget-chart.html">Chart</a></li>
-                    <li><a href="./widget-card.html">Card</a></li>
-                    <li><a href="./widget-list.html">List</a></li>
-                </ul>
             </li>
             <li>
                 <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
@@ -175,22 +156,44 @@
                     <span class="nav-text">Setting</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="./form-element.html">Form Elements</a></li>
-                    <li><a href="./form-wizard.html">Wizard</a></li>
-                    <li><a href="./form-ckeditor.html">CkEditor</a></li>
-                    <li><a href="form-pickers.html">Pickers</a></li>
-                    <li><a href="form-validation.html">Form Validate</a></li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Member</a>
+                        <ul aria-expanded="false">
+                            <li><a href="{{ route('member-package.index') }}">Member Package</a></li>
+                            <li><a href="{{ route('member-package-type.index') }}">Member Package Type</a></li>
+                            <li><a href="{{ route('member-package-category.index') }}">Member Package Category</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Class Name</a></li>
+                    <li><a href="#">Locker Package</a></li>
+                    <li><a href="{{ route('method-payment.index') }}">Method Payment</a></li>
+                    <li><a href="#">Physiotherapy Package</a></li>
+                    <li><a href="{{ route('refferal.index') }}">Refferal</a></li>
+                    <li><a href="{{ route('sold-by.index') }}">Sold By</a></li>
+                    <li><a href="{{ route('source-code.index') }}">Source Code</a></li>
+                    <li><a href="#">Studio Name</a></li>
+                    <li><a href="#">Studio Package</a></li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Trainer</a>
+                        <ul aria-expanded="false">
+                            <li><a href="{{ route('trainer-package.index') }}">Trainer Package</a></li>
+                            <li><a href="{{ route('trainer-package-type.index') }}">Trainer Package Type</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Transfer Package</a></li>
+                    <li>
+                        <a href="{{ route('logout') }}" class="nav-link"
+                            onclick="event.preventDefault();
+                                        document.getElementById('logout-form').submit();"
+                            class="dropdown-item">
+                            <i class="nav-icon fas fa-sign-out-alt"></i>
+                            <p>Logout</p>
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
+                    </li>
                 </ul>
-            </li>
-            <li>
-                <a href="{{ route('logout') }}" class="nav-link" onclick="event.preventDefault();
-                    document.getElementById('logout-form').submit();" class="dropdown-item">
-                    <i class="nav-icon fas fa-sign-out-alt"></i>
-                    <p>Logout</p>
-                </a>
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                    @csrf
-                </form>
             </li>
             {{-- <li>
                 <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
@@ -215,8 +218,8 @@
             </li> --}}
         </ul>
         <div class="copyright">
-            <p><strong>School Admission Dashboard</strong></p>
-            <p class="fs-12">Made with <span class="heart"></span> by DexignLab</p>
+            <p>Hi, <strong>{{ Auth::user()->full_name }}</strong></p>
+            <p class="fs-12">Made with <span class="heart"></span> by Warastra Adhiguna</p>
         </div>
     </div>
 </div>

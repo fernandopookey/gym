@@ -1,9 +1,9 @@
 <!--**********************************
-			Footer start
-		***********************************-->
+   Footer start
+  ***********************************-->
 <div class="footer footer-outer">
     <div class="copyright">
-        <p>Copyright © Designed &amp; Developed by <a href="https://dexignlab.com/" target="_blank">DexignLab</a> 2023
+        <p>Copyright © Developed by <a href="https://dexignlab.com/" target="_blank">Warastra Adhiguna</a> 2023
         </p>
     </div>
 </div>
@@ -28,7 +28,8 @@
                     <div class="col-xl-6">
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label mb-2">Student Name</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="James">
+                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                placeholder="James">
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput2" class="form-label mb-2">Email</label>
@@ -75,39 +76,113 @@
 
 
 <!--**********************************
-		Modal
-	***********************************-->
+  Modal
+ ***********************************-->
 <!--**********************************
         Scripts
     ***********************************-->
 <!-- Required vendors -->
-<script src="/admingym/vendor/global/global.min.js"></script>
-<script src="/admingym/vendor/chart.js/Chart.bundle.min.js"></script>
-<script src="/admingym/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="{{ asset('admingym/vendor/global/global.min.js') }}"></script>
+<script src="{{ asset('admingym/vendor/chart.js/Chart.bundle.min.js') }}"></script>
+<script src="{{ asset('admingym/vendor/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
 <!-- Apex Chart -->
-<script src="/admingym/vendor/apexchart/apexchart.js"></script>
+<script src="{{ asset('admingym/vendor/apexchart/apexchart.js') }}"></script>
 <!-- Chart piety plugin files -->
-<script src="/admingym/vendor/peity/jquery.peity.min.js"></script>
-<script src="/admingym/vendor/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+<script src="{{ asset('admingym/vendor/peity/jquery.peity.min.js') }}"></script>
+<script src="{{ asset('admingym/vendor/jquery-nice-select/js/jquery.nice-select.min.js') }}"></script>
 <!--swiper-slider-->
-<script src="/admingym/vendor/swiper/js/swiper-bundle.min.js"></script>
+<script src="{{ asset('admingym/vendor/swiper/js/swiper-bundle.min.js') }}"></script>
 
 
 <!-- Datatable -->
-<script src="/admingym/vendor/datatables/js/jquery.dataTables.min.js"></script>
-<script src="/admingym/js/plugins-init/datatables.init.js"></script>
+<script src="{{ asset('admingym/vendor/datatables/js/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('admingym/js/plugins-init/datatables.init.js') }}"></script>
 
 <!-- Dashboard 1 -->
-<script src="/admingym/js/dashboard/dashboard-1.js"></script>
-<script src="/admingym/vendor/wow-master/dist/wow.min.js"></script>
-<script src="/admingym/vendor/bootstrap-datetimepicker/js/moment.js"></script>
-<script src="/admingym/vendor/datepicker/js/bootstrap-datepicker.min.js"></script>
-<script src="/admingym/vendor/bootstrap-select-country/js/bootstrap-select-country.min.js"></script>
+<script src="{{ asset('admingym/js/dashboard/dashboard-1.js') }}"></script>
+<script src="{{ asset('admingym/vendor/wow-master/dist/wow.min.js') }}"></script>
+<script src="{{ asset('admingym/vendor/bootstrap-datetimepicker/js/moment.js') }}"></script>
+<script src="{{ asset('admingym/vendor/datepicker/js/bootstrap-datepicker.min.js') }}"></script>
+<script src="{{ asset('admingym/vendor/bootstrap-select-country/js/bootstrap-select-country.min.js') }}"></script>
 
-<script src="/admingym/js/dlabnav-init.js"></script>
-<script src="/admingym/js/custom.min.js"></script>
+<script src="{{ asset('admingym/js/dlabnav-init.js') }}"></script>
+<script src="{{ asset('admingym/js/custom.min.js') }}"></script>
+<script src="{{ asset('custom/js/jquery.mask.min.js') }}"></script>
+
+<!-- Required vendors -->
+<script src="{{ asset('admingym/vendor/jquery-nice-select/js/jquery.nice-select.min.js') }}"></script>
+<script src="{{ asset('admingym/vendor/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
+<script src="{{ asset('admingym/vendor/select2/js/select2.full.min.js') }}"></script>
+<script src="{{ asset('admingym/js/plugins-init/select2-init.js') }}"></script>
+<script src="{{ asset('admingym/js/dlabnav-init.js') }}"></script>
+
+<!-- Daterangepicker -->
+<!-- momment js is must -->
+<script src="{{ asset('admingym/vendor/moment/moment.min.js') }}"></script>
+<script src="{{ asset('admingym/vendor/bootstrap-daterangepicker/daterangepicker.js') }}"></script>
+<!-- clockpicker -->
+<script src="{{ asset('admingym/vendor/clockpicker/js/bootstrap-clockpicker.min.js') }}"></script>
+<!-- asColorPicker -->
+<script src="{{ asset('admingym/vendor/jquery-asColor/jquery-asColor.min.js') }}"></script>
+<script src="{{ asset('admingym/vendor/jquery-asGradient/jquery-asGradient.min.js') }}"></script>
+<script src="{{ asset('admingym/vendor/jquery-asColorPicker/js/jquery-asColorPicker.min.js') }}"></script>
+<!-- Material color picker -->
+<script src="{{ asset('admingym/vendor/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js') }}">
+</script>
+<!-- pickdate -->
+<script src="{{ asset('admingym/vendor/pickadate/picker.js') }}"></script>
+<script src="{{ asset('admingym/vendor/pickadate/picker.time.js') }}"></script>
+<script src="{{ asset('admingym/vendor/pickadate/picker.date.js') }}"></script>
 
 
+
+<!-- Daterangepicker -->
+<script src="{{ 'admingym/js/plugins-init/bs-daterange-picker-init.js' }}"></script>
+<!-- Clockpicker init -->
+<script src="{{ 'admingym/js/plugins-init/clock-picker-init.js' }}"></script>
+<!-- asColorPicker init -->
+<script src="{{ 'admingym/js/plugins-init/jquery-asColorPicker.init.js' }}"></script>
+<!-- Material color picker init -->
+<script src="{{ 'admingym/js/plugins-init/material-date-picker-init.js' }}"></script>
+<!-- Pickdate -->
+<script src="{{ 'admingym/js/plugins-init/pickadate-init.js' }}"></script>
+<script src="{{ 'admingym/vendor/bootstrap-select/dist/js/bootstrap-select.min.js' }}"></script>
+<script src="{{ 'admingym/vendor/jquery-nice-select/js/jquery.nice-select.min.js' }}"></script>
+
+
+<script>
+    @if (Session::has('success'))
+        toastr.success("{{ Session::get('success') }}")
+    @endif
+</script>
+
+<script>
+    $(document).ready(function() {
+        $('.rupiah').mask("#,##0", {
+            reverse: true
+        });
+    });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+    integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    var loadFile = function(event) {
+        var output = document.getElementById('output');
+        output.src = URL.createObjectURL(event.target.files[0]);
+    };
+</script>
+
+@if (Session::has('message'))
+    <script>
+        toastr.options = {
+            "progressBar": true,
+        }
+        toastr.success("{{ Session::get('message') }}");
+    </script>
+@endif
 
 
 </body>
