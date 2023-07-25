@@ -6,7 +6,7 @@
                     @method('PUT')
                     @csrf
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Create Member</h1>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Member</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -153,9 +153,9 @@
                                     <input class="form-control" type="file" name="photos"
                                         onchange="loadFile(event)" id="formFile">
                                     <img src="{{ Storage::disk('local')->url($value->photos) }}"
-                                        class="img-fluid mt-4 mb-4" width="200" alt="">
+                                        class="img-fluid mt-4" width="200" alt="">
                                 </div>
-                                <img id="output" class="img-fluid mt-2 mb-4" width="200">
+                                <img id="outputEdit" class="img-fluid mb-4" width="200">
                             </div>
                         </div>
                     </div>

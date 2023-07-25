@@ -27,14 +27,15 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('/')->namespace('Admin')->middleware(['auth', 'admin'])->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 
-    Route::resource('member', '\App\Http\Controllers\Admin\MemberController');
-    Route::resource('member-package', '\App\Http\Controllers\Admin\MemberPackageController');
-    Route::resource('member-package-type', '\App\Http\Controllers\Admin\MemberPackageTypeController');
-    Route::resource('member-package-category', '\App\Http\Controllers\Admin\MemberPackageCategoryController');
+    Route::resource('member', '\App\Http\Controllers\Member\MemberController');
+    Route::resource('member-package', '\App\Http\Controllers\Member\MemberPackageController');
+    Route::resource('member-package-type', '\App\Http\Controllers\Member\MemberPackageTypeController');
+    Route::resource('member-package-category', '\App\Http\Controllers\Member\MemberPackageCategoryController');
 
-    Route::resource('trainer', '\App\Http\Controllers\Admin\TrainerController');
-    Route::resource('trainer-package', '\App\Http\Controllers\Admin\TrainerPackageController');
-    Route::resource('trainer-package-type', '\App\Http\Controllers\Admin\TrainerPackageTypeController');
+    Route::resource('trainer', '\App\Http\Controllers\Trainer\TrainerController');
+    Route::resource('trainer-package', '\App\Http\Controllers\Trainer\TrainerPackageController');
+    Route::resource('trainer-package-type', '\App\Http\Controllers\Trainer\TrainerPackageTypeController');
+    Route::resource('trainer-transaction-type', '\App\Http\Controllers\Trainer\TrainerTransactionTypeController');
 
     Route::resource('source-code', '\App\Http\Controllers\Admin\SourceCodeController');
     Route::resource('method-payment', '\App\Http\Controllers\Admin\MethodPaymentController');
@@ -50,6 +51,13 @@ Route::prefix('/')->namespace('Admin')->middleware(['auth', 'admin'])->group(fun
     Route::resource('personal-trainer', '\App\Http\Controllers\Staff\PersonalTrainerController');
     Route::resource('physiotherapy', '\App\Http\Controllers\Staff\PhysiotherapyController');
     Route::resource('pt-leader', '\App\Http\Controllers\Staff\PTLeaderController');
+
+    Route::resource('studio-booking', '\App\Http\Controllers\Admin\StudioBookingController');
+    Route::resource('studio-package', '\App\Http\Controllers\Admin\StudioPackageController');
+    Route::resource('studio-transactions', '\App\Http\Controllers\Admin\StudioTransactionController');
+
+    Route::resource('locker-package', '\App\Http\Controllers\Admin\LockerPackageController');
+    Route::resource('locker-transaction', '\App\Http\Controllers\Admin\LockerTransactionController');
 });
 
 Auth::routes();

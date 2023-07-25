@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Page Title Here -->
-    <title>Akademi : School and Education Management Admin Dashboard Template</title>
+    <title>Gelora GYM: Login Page</title>
 
     <!-- FAVICONS ICON -->
     <link rel="shortcut icon" type="image/png" href="/admingym/images/favicon.png">
@@ -36,18 +36,19 @@
     <div class="authincation d-flex flex-column flex-lg-row flex-column-fluid">
         <div class="login-aside text-center  d-flex flex-column flex-row-auto">
             <div class="d-flex flex-column-auto flex-column pt-lg-40 pt-15">
-                <div class="text-center mb-lg-4 mb-2 pt-5 logo">
-                    <img src="/admingym/images/logo-white.png" alt="">
+                {{-- <div class="text-center mb-lg-4 mb-2 pt-5 logo"> --}}
+                <div class="text-center pt-5 logo">
+                    {{-- <img src="/admingym/images/logo-white.png" alt=""> --}}
+                    <h1 class="text-white">GELORA GYM</h1>
                 </div>
                 <h3 class="mb-2 text-white">Welcome back!</h3>
-                <p class="mb-4">User Experience & Interface Design <br>Strategy SaaS Solutions</p>
+                {{-- <p class="mb-4">User Experience & Interface Design <br>Strategy SaaS Solutions</p> --}}
             </div>
             <div class="aside-image position-relative"
                 style="background-image:url(/admingym/images/background/pic-2.png);">
-                <img class="img1 move-1" src="/admingym/images/background/pic3.png" alt="">
-                <img class="img2 move-2" src="/admingym/images/background/pic4.png" alt="">
-                <img class="img3 move-3" src="/admingym/images/background/pic5.png" alt="">
-
+                <img class="img1 move-1" src="/admingym/images/gym/gym1.jpg" alt="">
+                <img class="img2 move-2" src="/admingym/images/gym/gym2.jpg" alt="">
+                <img class="img3 move-3" src="/admingym/images/gym/gym3.jpg" alt="">
             </div>
         </div>
         <div
@@ -61,7 +62,7 @@
                                     @csrf
                                     <div class="text-center mb-4">
                                         <h3 class="text-center mb-2 text-black">Sign In</h3>
-                                        <span>Your Social Campaigns</span>
+                                        {{-- <span>Your Social Campaigns</span> --}}
                                     </div>
                                     {{-- <div class="row mb-4">
                                         <div class="col-xl-6 col-6">
@@ -106,9 +107,9 @@
                                             id="email" value="{{ old('email') }}" name="email" required
                                             autocomplete="email" autofocus>
                                         @error('email')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
                                         @enderror
                                     </div>
                                     <div class="mb-3">
@@ -118,9 +119,9 @@
                                             class="form-control @error('password') is-invalid @enderror" id="password"
                                             name="password" required autocomplete="current-password">
                                         @error('password')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
                                         @enderror
                                     </div>
                                     <a href="javascript:void(0);" class="text-primary float-end mb-4">Forgot Password

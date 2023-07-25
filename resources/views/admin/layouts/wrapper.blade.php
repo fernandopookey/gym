@@ -1,7 +1,8 @@
-@include('admin.layouts.head');
+@include('admin.includes.head');
 @include('admin.layouts.content');
 {{-- @include('admin.layouts.sidebar-chatbox'); --}}
-@include('admin.layouts.header');
-@include('admin.layouts.sidebar');
-@include('admin.layouts.wallet-sidebar');
-@include('admin.layouts.footer');
+@include('admin.includes.header');
+@include('admin.includes.sidebar');
+{{-- @include('admin.includes.left-sidebar'); --}}
+{{-- @include('admin.includes.wallet-sidebar'); --}}
+@include('admin.includes.footer');

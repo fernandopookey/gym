@@ -14,6 +14,9 @@
     $("#date-format").bootstrapMaterialDatePicker({
         format: "dddd DD MMMM YYYY - HH:mm",
     });
+    $("#date-formatEdit").bootstrapMaterialDatePicker({
+        format: "dddd DD MMMM YYYY - HH:mm",
+    });
 
     $("#min-date").bootstrapMaterialDatePicker({
         format: "YYYY-MM-DD HH:mm",
