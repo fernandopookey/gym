@@ -22,7 +22,7 @@ class AdministratorController extends Controller
     {
         $data = $request->validate([
             'full_name' => 'required|string|max:200',
-            'email'     => 'required',
+            'email'     => 'required|email',
             'gender'    => 'required',
             'club'      => 'required'
         ]);

@@ -27,9 +27,6 @@
                         id="example-student">
                         <thead>
                             <tr>
-                                {{-- <th>
-                                    <input type="checkbox" class="form-check-input" id="checkAll" required="">
-                                </th> --}}
                                 <th>First Name</th>
                                 <th>Last Name</th>
                                 <th>Gender</th>
@@ -102,11 +99,11 @@
                                                 data-bs-toggle="modal"
                                                 data-bs-target="#modalEdit{{ $member->id }}">Edit</button>
                                             <form action="{{ route('member.destroy', $member->id) }}"
-                                                onclick="return confirm('Hapus Data Member')" method="POST">
+                                                onclick="return confirm('Delete Data ?')" method="POST">
                                                 @method('delete')
                                                 @csrf
                                                 <button type="submit"
-                                                    class="btn light btn-danger btn-xs">Hapus</button>
+                                                    class="btn light btn-danger btn-xs">Delete</button>
                                             </form>
                                         </div>
                                     </td>
