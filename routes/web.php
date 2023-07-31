@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\SourceCodeController;
+use App\Http\Controllers\Trainer\RunningSessionController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -52,12 +53,16 @@ Route::prefix('/')->namespace('Admin')->middleware(['auth', 'admin'])->group(fun
     Route::resource('physiotherapy', '\App\Http\Controllers\Staff\PhysiotherapyController');
     Route::resource('pt-leader', '\App\Http\Controllers\Staff\PTLeaderController');
 
+    Route::resource('locker-package', '\App\Http\Controllers\Admin\LockerPackageController');
+    Route::resource('locker-transaction', '\App\Http\Controllers\Admin\LockerTransactionController');
+
     Route::resource('studio-booking', '\App\Http\Controllers\Admin\StudioBookingController');
     Route::resource('studio-package', '\App\Http\Controllers\Admin\StudioPackageController');
     Route::resource('studio-transactions', '\App\Http\Controllers\Admin\StudioTransactionController');
 
-    Route::resource('locker-package', '\App\Http\Controllers\Admin\LockerPackageController');
-    Route::resource('locker-transaction', '\App\Http\Controllers\Admin\LockerTransactionController');
+    Route::resource('trainer-session', '\App\Http\Controllers\Trainer\TrainerSessionController');
+    Route::resource('running-session', '\App\Http\Controllers\Trainer\RunningSessionController');
+    // Route::get('running-session-checkout', [RunningSessionController::class, 'checkout'])->name('user-filter');
 });
 
 Auth::routes();

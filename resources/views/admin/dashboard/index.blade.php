@@ -282,7 +282,7 @@
                     </span>
                     <div class="media-body text-white text-end">
                         <p class="mb-1 text-white">Total Trainer</p>
-                        <h3 class="text-white">{{ $totalMember }}</h3>
+                        <h3 class="text-white">{{ $totalTrainer }}</h3>
                     </div>
                 </div>
             </div>

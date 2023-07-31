@@ -45,7 +45,7 @@
             </li>
             <li>
                 <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
-                    <i class="material-symbols-outlined">restaurant_menu</i>
+                    <i class="material-symbols-outlined">person</i>
                     <span class="nav-text">Member Transaction</span>
                 </a>
                 <ul aria-expanded="false">
@@ -55,8 +55,8 @@
                     <li><a href="#">Member Payment</a></li>
                     <li><a href="{{ route('studio-transactions.index') }}">Studio Payment</a></li>
                     <li><a href="{{ route('studio-booking.index') }}">Studio Booking</a></li>
-                    <li><a href="#">Running Session</a></li>
-                    <li><a href="#">Session Trainer</a></li>
+                    <li><a href="{{ route('running-session.index') }}">Running Session</a></li>
+                    <li><a href="{{ route('trainer-session.index') }}">Trainer Session</a></li>
                     <li><a href="#">Session Trainer PGT</a></li>
                     <li><a href="#">Session Trainer GO</a></li>
                     <li><a href="#">Class Recap</a></li>
@@ -124,8 +124,7 @@
             </li>
             <li>
                 <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
-
-                    <i class="material-icons"> favorite </i>
+                    <i class="material-symbols-outlined">person</i>
                     <span class="nav-text">Member</span>
                 </a>
                 <ul aria-expanded="false">
