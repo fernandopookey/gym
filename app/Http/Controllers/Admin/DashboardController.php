@@ -13,7 +13,7 @@ class DashboardController extends Controller
     {
         $data = [
             'totalMember'           => Member::count(),
-            'totalTrainer'          => Member::count(),
+            'totalTrainer'          => Trainer::count(),
             'members'               => Member::take(2)->get(),
             'trainers'              => Trainer::take(1)->get(),
             'activeMember'          => Member::where('status', 'Active')->count(),
